@@ -1,21 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package exemplopiscina;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
-/**
- *
- * @author T-Gamer
- */
-public class ExemploPiscina {
-
-    /**
-     * @param args the command line arguments
-     */
+public class ExemploPiscina extends JFrame implements ActionListener {
+    JLabel lbllarg, lblprof, lblalt,lblresult;
+    JTextField txtlarg,txtprof,lblaltt;
+    JButton btncalcular,btnlimpar;
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        JFrame janela = new ExemploPiscina ();
+                janela.setUndecorated(true);
+                janela.getRootPane().setWindowDecorationStyle(JRootPane.Frame);
+                
     }
     
 }
