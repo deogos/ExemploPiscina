@@ -42,7 +42,6 @@ public class ExemploPiscina extends JFrame implements ActionListener{
                             
                             btncalcular = new JButton("Calcular");      btncalcular.addActionListener(this);
                             btnlimpar = new JButton("Calcular");        btnlimpar.addActionListener(this);
-                            
                             txtlarg = new JTextField();
                             txtprof = new JTextField();
                             txtalt = new JTextField();
