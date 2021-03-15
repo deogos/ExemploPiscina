@@ -10,7 +10,7 @@ public class ExemploPiscina extends JFrame implements ActionListener{
     JButton btncalcular,btnlimpar;
     
     public static void main(String[] args) {
-        JFrame janela = new ExemploPiscina();
+            JFrame janela = new ExemploPiscina();
                 janela.setUndecorated(true);
                 janela.getRootPane().setWindowDecorationStyle(JRootPane.FRAME);
                 janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -81,7 +81,7 @@ public class ExemploPiscina extends JFrame implements ActionListener{
           }
           
           if(e.getSource()==btncalcular) result = larg*alt*prof;
-          txtresult.setText(""+result);
-        
-             
+          txtresult.setText(" "+result);
         }  
+    }
+}
