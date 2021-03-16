@@ -46,13 +46,14 @@ public class ExemploPiscina extends JFrame implements ActionListener{
                             txtlarg = new JTextField();
                             txtprof = new JTextField();
                             txtalt = new JTextField();
+                            txtresult.setEditable(false);
                             
                             
                             
                             getContentPane().add(lbllarg);      getContentPane().add(txtlarg);  
                             getContentPane().add(lblprof);      getContentPane().add(txtprof); 
                             getContentPane().add(lblalt);       getContentPane().add(txtalt); 
-                            getContentPane().add(lblresult);     
+                            getContentPane().add(lblresult);    getContentPane().add(txtresult); 
                             getContentPane().add(btncalcular);     
                             getContentPane().add(btnlimpar);
                         }
