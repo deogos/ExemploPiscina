@@ -79,7 +79,7 @@ public class ExemploPiscina extends JFrame implements ActionListener{
               return;
           }
           
-          if(e.getSource()==btncalcular) result = larg*alt*prof;
+          if(e.getSource()==btncalcular) result = (larg*alt*prof)*300;
           txtresult.setText(" "+result);
         }  
     }
