@@ -10,7 +10,7 @@ public class ExemploPiscina extends JFrame implements ActionListener{
     JButton btncalcular,btnlimpar;
     
     public static void main(String[] args) {
-            JFrame janela = new ExemploPiscina();
+                JFrame janela = new ExemploPiscina();
                 janela.setUndecorated(true);
                 janela.getRootPane().setWindowDecorationStyle(JRootPane.FRAME);
                 janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,7 +21,7 @@ public class ExemploPiscina extends JFrame implements ActionListener{
                             setTitle("Calculadora metros cubicos");
                             setBounds(400,200,400,200);
                             getContentPane().setBackground(new Color(211,211,211));
-                            getContentPane().setLayout(new GridLayout(3,4));
+                            getContentPane().setLayout(new GridLayout(6,2));
                             
                             lbllarg = new JLabel ("Largura");
                             lbllarg.setForeground(Color.black);
@@ -41,17 +41,18 @@ public class ExemploPiscina extends JFrame implements ActionListener{
                             
                             
                             btncalcular = new JButton("Calcular");      btncalcular.addActionListener(this);
-                            btnlimpar = new JButton("Calcular");        btnlimpar.addActionListener(this);
+                            btnlimpar = new JButton("Limpar");          btnlimpar.addActionListener(this);
+                            
                             txtlarg = new JTextField();
                             txtprof = new JTextField();
                             txtalt = new JTextField();
-                            txtresult.setEditable(false);
+                            
                             
                             
                             getContentPane().add(lbllarg);      getContentPane().add(txtlarg);  
                             getContentPane().add(lblprof);      getContentPane().add(txtprof); 
                             getContentPane().add(lblalt);       getContentPane().add(txtalt); 
-                            getContentPane().add(lblresult);    getContentPane().add(txtresult); 
+                            getContentPane().add(lblresult);     
                             getContentPane().add(btncalcular);     
                             getContentPane().add(btnlimpar);
                         }
@@ -73,14 +74,14 @@ public class ExemploPiscina extends JFrame implements ActionListener{
               larg = Double.parseDouble(txtlarg.getText());
               prof = Double.parseDouble(txtprof.getText());
           }
-          catch(NumberFormatException erro)
+          catch(NumberFormatException error)
           {
               txtresult.setText("Só números");
               return;
           }
           
           if(e.getSource()==btncalcular) result = (larg*alt*prof)*300;
-          txtresult.setText(" "+result);
+          txtresult.setText("O valor será "+result);
         }  
     }
 }
