@@ -85,7 +85,7 @@ public class ExemploPiscina extends JFrame implements ActionListener{
           }
           
           if(e.getSource()==btncalcular) result = (larg*alt*prof)*300;
-          txtresult.setText("O valor será "+result);
+          txtresult.setText("O valor será: R$"+result);
         }  
     }
 }
